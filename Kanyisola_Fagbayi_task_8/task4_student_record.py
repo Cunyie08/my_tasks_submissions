@@ -8,17 +8,16 @@ gender = input("please enter your gender: ").capitalize()
 courses = ["Physics", "Maths", "English", "Biology"]
 
 # Data
-physics = 45
-maths = 75
-english = 70
-biology = 90
+scores = [63, 45, 60]
+average_scores = sum(scores)/len(scores)
+print(average_scores)
+
+
 
 # Use comparison operator to check student age category and grade 
-teenager = age <= 19 #== True
-passed_phys = (physics >= 65)
-passed_maths = (maths >= 65) 
-passed_eng = (english >= 65)
-passed_bio = (biology >= 65)
+teenager = age <= 19 
+GradeA = (average_scores >= 65) 
+Passed = (GradeA == True)
 
 
 # Store student details in a dictionary
@@ -29,14 +28,9 @@ students = {
         "Gender": gender,
         "Courses": courses  
     },
-    "Scores": [physics, maths, english, biology],
+    "Scores": scores,
 
-    "Passed": {
-        "passed_Phys" : True,
-        "passed_maths" : True,
-        "passed_english" : True,
-        "passed_biology" : True,
-    }
+    "Passed": {Passed}
 }
 
 
@@ -49,7 +43,6 @@ print(f"Gender\t\t{students["Basic Info"]["Gender"]}")
 print(f"Teenager\t{teenager}")
 print(f"Subjects\t{'|'.join(students["Basic Info"]["Courses"])}")
 print(f"Results\t\t{students["Scores"]}")
-print(f"Passed Phys:\t{passed_phys}")
-print(f"Passed Maths:\t{passed_maths}")
-print(f"Passed Eng.:\t{passed_eng}")
-print(f"Passed Bio.:\t{passed_bio}")
+print(f"Average Score:\t{average_scores}")
+print(f"Passed:\t\t{Passed}")
+

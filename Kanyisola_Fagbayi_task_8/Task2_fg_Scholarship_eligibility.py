@@ -1,11 +1,11 @@
 # Ask the student for their name, age and score
-#name = input("Enter your name: ")
-#age = int(input("Enter your age: "))
-#score = int(input("Enter your score: "))
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+score = int(input("Enter your score: "))
 
 # Check if the student is eligible for a scholarship
-#eligibility = (age < 18) and (score > 70)
-#print(f"Candidate: {name}\n Age: {age}\n Score: {score}\n Eligibility: {eligibility}")
+eligibility = (age < 18) and (score > 70)
+print(f"Candidate: {name}\n Age: {age}\n Score: {score}\n Eligibility: {eligibility}")
 
 # Explanation
 print("""The code above is checking for eligibility. A student is eligible for scholarship

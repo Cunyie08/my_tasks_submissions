@@ -4,20 +4,27 @@ store = {'Candle': 30, 'Fruit wine': 150, 'Birthday cards': 150, 'Box of Tea': 1
 
 # Ask customer for their order
 order = input(f"We currenlty have {store} available, please enter your order: ")
-quantity = input("Please enter the quantity: ")
+quantity = int(input("Please enter the quantity: "))
 
-#order_keys = store.keys() == "candle"
-#quantity_values = store.values() == 20
+# Make a copy of the available store items
+order_update = store.copy()
 
+# Deduct the purchased item from the order
+order_update[order] -= quantity 
 
-#purchase = (order_keys, quantity_values)
+# Print dictionary before and after purchase
+print(f"Before Purchase: {store}")
+after_purchase = order_update
+print(f"After Purchase: {order_update}")
 
-#for key, value in store.items():
-    #print(f"Before purchase: {key}: {value}")
-# Using assignment operator -
+# Alternatively - Using update()
+# Make a copy of the available store items 
+order_update = store.copy()
+order_update[order] -= quantity 
+# Update the store item after deduction
+after_purchase = store.update()
 
-#before_prchase = store
-store[order] -= quantity
-print(store)
-#after_purchase = (before_prchase.update())
-#print(after_purchase)
+# Print dictionary before and after purchase
+print(f"Before Purchase: {store}")
+print(f"After Purchase: {order_update}")
+
