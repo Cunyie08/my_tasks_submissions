@@ -1,8 +1,8 @@
 # This is a simulated USSD menu interaction for a mobile clinic. 
-# The products aim is to make matenrnal healthcare accessible to expectant mothers in rural areas without smartphones. 
+# The products aim is to make maternal healthcare accessible to expectant mothers in rural areas without smartphones. 
 # The end goal is to reduce maternal mortality rate in underserved regions in Nigeria.
 # Grant users access to medical personnels. 
-# No doubt there are a lot of infrastructure, that the govt need to put in place but this is step 1.
+# No doubt there are a lot of infrastructure, that the govt needs to put in place but this simply a logic.
 # Please use the prescribed prompts commented on each block.
 # I have used break to stop the inputs that aren't prescribed. 
 # I really enjoyed this....To be continued. #KanyisolaTheIncomingTechSisInshaAllah
@@ -16,10 +16,10 @@ while True:
     ussd = str(input("Enter the USSD code:\n"))
     if ussd == "*882#":
         print("\nFor English, Press 1")
-        print("For Yoruba, Press 2")
-        print("For Igbo, Press 3")
-        print("For Hausa, Press 4")
-        print("For Pidgin, Press 5\n")
+        print("Fun ede Yoruba, te eji")
+        print("Maka asusu Igbo, pia ato")
+        print("Domin Hausa, danna hudu")
+        print("For Pidgin, press faif\n")
         lang_option = str(input("Please enter an option: ")) # Please enter 1, I'm still a learner...LOL
         if lang_option == "1":
             print("\nWelcome to NCC Mobile Clinic, How can we be of service to you today?:\n ")
@@ -93,7 +93,7 @@ while True:
             print("Invalid option. Please enter correct option.")
             break
     else:
-        print("Inavlid USSD!")
+        print("Invalid USSD!")
         break
         
 

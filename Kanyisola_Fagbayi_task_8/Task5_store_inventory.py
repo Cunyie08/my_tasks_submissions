@@ -1,5 +1,5 @@
 # Create a dictionary called store
-store = {'Candle': 30, 'Fruit wine': 150, 'Birthday cards': 150, 'Box of Tea': 18}
+store = {'Candles': 30, 'Bottles of Fruit wine': 150, 'Birthday cards': 150, 'Boxes of Tea': 18}
 
 
 # Ask customer for their order
