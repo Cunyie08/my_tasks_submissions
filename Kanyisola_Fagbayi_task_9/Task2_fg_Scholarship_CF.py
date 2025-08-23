@@ -11,7 +11,7 @@ while True:
     if (age >= 16):
         score = score = int(input("Enter your score: "))
         if (score >= 70):
-            citizen = input("Are you from Nigeria? True or False: ")
+            citizen = input("Are you from Nigeria? 'yes' or 'no': ")
             if (citizen == "yes"):
                 Undergraduate_student = input("Are you a full time undergraduate student from a recognised Nigerian university? Yes or No:")
                 if (Undergraduate_student == "yes"):
@@ -49,25 +49,32 @@ while True:
 
 
 
-# student_file = {
-#     "Basic Info": {
-#         "Name": name,
-#         "Age": age,
-#         "Gender": gender,
-#         "Nationality": citizen
-#     },
-#     "Academic Info": {
-#         "Score": score,
-#         "Enrollment": Undergraduate_student,
-#         "Other Scholarships": other_student_scho,
-#         "Subjects": academic_subjects,
-#         "Results": academic_result_check
-#     },
-#}
+student_file = {
+     "Basic Info": {
+        "Name": name,
+         "Age": age,
+         "Gender": gender,
+         "Nationality": citizen
+     },
+     "Academic Info": {
+         "Score": score,
+         "Enrollment": Undergraduate_student,
+         "Other Scholarships": other_student_scho,
+         "Subjects": academic_subjects,
+         "Results": results
+     },
+}
 
 
-# academic_result_check = {academic_subjects[0]:academic_result1, academic_subjects[1]:academic_result2, academic_subjects[2]:academic_result3, academic_subjects[3]:academic_result4, academic_subjects[-1]:academic_result5}
-# results = ((academic_result1) and (academic_result2) and (academic_result3) and (academic_result4) and (academic_result5))
-
-
-
+# Output
+print("\n-----------------STUDENT FILE----------------------")
+print(f"Name:\t\t\t{student_file['Basic Info']['Name']}")
+print(f"Age:\t\t\t{student_file['Basic Info']['Age']}")
+print(f"Gender:\t\t\t{student_file['Basic Info']['Gender']}")
+print(f"Nationality:\t\t{student_file['Basic Info']['Nationality']}")
+print("\n-------------------ACADEMIC INFO--------------------")
+print(f"Score:\t\t\t{student_file['Academic Info']['Score']}")
+print(f"Enrollment:\t\t{student_file['Academic Info']['Enrollment']}")
+print(f"Other Scholarships:\t{student_file['Academic Info']['Other Scholarships']}")
+print(f"Subjects:\t\t{student_file['Academic Info']['Subjects']}")
+print(f"Results:\t\t{student_file['Academic Info']['Results']}")
