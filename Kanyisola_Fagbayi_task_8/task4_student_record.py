@@ -1,7 +1,7 @@
 # Create an empty dictionary
 students = {}
 
-# Student record - Ask student to enter their name age and scores
+# Student record - Ask student to enter their name, age, gender and courses
 name = input("Please enter your full name: ").title()
 age = int(input("Please enter your age: "))
 gender = input("please enter your gender: ").capitalize()
@@ -34,8 +34,7 @@ students = {
 }
 
 
-
-# Print the Student Complete record using f strings
+# Print the Student Complete record using f-strings
 print(f"------------------Students' Record---------------------")
 print(f"Student Name:\t{students["Basic Info"]["Name"]}")
 print(f"Age:\t\t{students["Basic Info"]["Age"]}")

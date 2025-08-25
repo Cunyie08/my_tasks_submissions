@@ -28,5 +28,5 @@ BP_test_result = 119/84
 
 print(f"Blood Pressure is normal : {normal_blood_pressure == BP_test_result}") # False; result is lower than expected range.
 print(f"Blood Pressure is not Normal : {normal_blood_pressure != BP_test_result}") # True; result is lower than normal
-print(f"Blood Pressure is higher than expected: {normal_blood_pressure < BP_test_result}") # False; the result is higher than the normal range.
-print(f"Blood Pressure is lower than expected: {normal_blood_pressure > BP_test_result}") # True; the result is lower than the normal range.
+print(f"Blood Pressure is higher than expected: {normal_blood_pressure < BP_test_result}") # False; the result is lower than the normal range.
+print(f"Blood Pressure is lower than expected: {normal_blood_pressure > BP_test_result}") # True; the result is higher than the normal range.
